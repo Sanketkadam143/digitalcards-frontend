@@ -1,26 +1,23 @@
 import React from "react";
-import { useGetUsersQuery } from "../../apis/userApi";
+import Navbar from "../../components/Header/Navbar/Navbar";
+import Hero from "../../components/Header/Home/Hero/Hero";
 
 const Home: React.FC = () => {
-  const {
-    data = [],
-    isLoading,
-    isSuccess,
-    isError,
-    isFetching,
-  } = useGetUsersQuery();
-
-  if (isLoading) {
-    return <p>Loading...</p>;
-  } else if (isError) {
-    return <p>Error:</p>;
-  } else if (isFetching) {
-    return <p>Fetching...</p>;
-  } else if (isSuccess) {
-    return <>{JSON.stringify(data)}</>;
-  } else {
-    return <p>Something went wrong</p>;
-  }
+  return (
+    <div >
+      <Navbar />
+      <Hero />
+    </div>
+  );
 };
 
 export default Home;
+
+// schema for the home page
+
+/*firstly navbar and then the main content
+//1.in the nav bar , logo  on the left and then the links on the center, and then the login and signup buttons on the right
+2. main content : Short upper tagline , heading , subheading , 2 buttons , all on the left
+3. on the right : image 
+
+*/

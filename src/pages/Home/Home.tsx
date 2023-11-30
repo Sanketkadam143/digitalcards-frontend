@@ -9,7 +9,7 @@ import { Pricing } from "../../components/Header/Home/Hero/Pricing";
 const Home: React.FC = () => {
   return (
     <div >
-  <Navbar />
+  
       <Hero />
       <Feature />
       <SinglePricing />

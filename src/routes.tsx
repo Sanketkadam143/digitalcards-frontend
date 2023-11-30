@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Error from "./pages/Error/Error";
 import NotFound from "./pages/404-Page/404";
+import CreateCard from "./pages/CreateCard/CreateCard";
 
 interface RouteObject {
   title: string;
@@ -16,6 +17,12 @@ export const routes: RouteObject[] = [
     title: "Home",
     path: "/",
     element: <Home />,
+    errorElement: <Error />,
+  },
+  {
+    title: "Create Card",
+    path: "/createcard",
+    element: <CreateCard />,
     errorElement: <Error />,
   },
   {

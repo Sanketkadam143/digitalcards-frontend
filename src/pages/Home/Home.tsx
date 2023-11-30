@@ -2,13 +2,19 @@ import React from "react";
 import Navbar from "../../components/Header/Navbar/Navbar";
 import Hero from "../../components/Header/Home/Hero/Hero";
 import Feature from "../../components/Header/Home/Hero/Feature";
+import CTA from "../../components/Header/Home/Hero/CTA";
+import SinglePricing from "../../components/Header/Home/Hero/SinglePricing";
+import { Pricing } from "../../components/Header/Home/Hero/Pricing";
 
 const Home: React.FC = () => {
   return (
     <div >
-  
+  <Navbar />
       <Hero />
       <Feature />
+      <SinglePricing />
+      <Pricing />
+      <CTA />
     </div>
   );
 };

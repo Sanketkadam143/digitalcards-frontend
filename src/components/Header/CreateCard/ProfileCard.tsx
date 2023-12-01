@@ -7,12 +7,12 @@ const ProfileCard: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center h-[100vh]">
       <div className="relative flex flex-col items-center rounded-[20px] w-[400px] mx-auto p-4 bg-white bg-clip-border shadow-3xl shadow-shadow-500 dark:!bg-navy-800 dark:text-white dark:!shadow-none">
-        <div className="relative flex h-32 w-full justify-center rounded-xl bg-cover">
-          <img
+        <div className="relative bg-gradient-to-b from-purple-500 to-purple-800 flex h-32 w-full justify-center rounded-xl bg-cover">
+          {/* <img
             src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
             className="absolute flex h-32 w-full justify-center rounded-xl bg-cover"
             alt=""
-          />
+          /> */}
           <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-[4px] border-white bg-pink-400 dark:!border-navy-700">
             <img
               className="h-full w-full rounded-full"

@@ -1,5 +1,6 @@
 import React from "react";
 import Tab1 from "./Tabs/Tab1";
+import Tab2 from "./Tabs/Tab2";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = React.useState(1);
@@ -33,9 +34,9 @@ const Tabs: React.FC = () => {
         </button>
       </div>
 
-      <div className="my-4 py-4 bg-white px-6 shadow-xl rounded h-3/5">
+      <div className="my-4 py-4 overflow-y-auto bg-white px-6 shadow-xl rounded h-3/5">
         {activeTab === 1 && <div> <Tab1 />  </div>}
-        {activeTab === 2 && <h1>Tab2</h1>}
+        {activeTab === 2 && <h1><Tab2 /></h1>}
         {activeTab === 3 && <h1>Tab3</h1>}
         {activeTab === 4 && <h1>Tab4</h1>}
       </div>
